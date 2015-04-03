@@ -23,6 +23,42 @@ var server = http.createServer(function(req, res) {
       res.setHeader('Content-Type', 'text/plain; charset="utf-8"');
       res.end(body);
       break;
+    case 'DELETE':
+      var path = url.parse(req.url).pathname;
+      var i = parsetInt(path.slice(1), 10);
+
+      if (isNaN(i)) {
+        res.statusCode = 400;
+        res.end('Invalid item id');
+      } else if (!items[i]) {
+        res.statusCode = 404;
+        res.end('Item not found');
+      } else {
+        items.splice(i, 1);
+        res.end('OK\n');
+      }
+      break;
+    case 'PUT':
+      var item = '';
+      req.on('data', function(chunk) {
+        item += chunk;
+      });
+      req.on('end', function() {
+        var path = url.parse(req.url).pathname;
+        var i = parsetInt(path.slice(1), 10);
+
+        if (isNaN(i)) {
+          res.statusCode = 400;
+          res.end('Invalid item id');
+        } else if (!items[i]) {
+          res.statusCode = 404;
+          res.end('Item not found');
+        } else {
+          items[i] = item;
+          res.end('OK\n');
+        }
+        break;
+      });
   }
 });
 server.listen(8888);
