@@ -1,0 +1,169 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'generator-webapp' ]
+2 info using npm@2.7.5
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 silly cache add args [ 'generator-webapp', null ]
+6 verbose cache add spec generator-webapp
+7 silly cache add parsed spec { raw: 'generator-webapp',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'generator-webapp',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed generator-webapp@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'generator-webapp', range: '*', hasData: false }
+12 silly mapToRegistry name generator-webapp
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/generator-webapp
+16 verbose addNameRange registry:https://registry.npmjs.org/generator-webapp not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/generator-webapp
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 13:55:09
+20 verbose request id 1c136aaaec2a6f42
+21 http request GET https://registry.npmjs.org/generator-webapp
+22 http 200 https://registry.npmjs.org/generator-webapp
+23 silly get cb [ 200,
+23 silly get   { date: 'Tue, 07 Apr 2015 11:55:09 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"6FSNF9IGXB6IN8KBB2INCMXJ7"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '46256',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-fra1234-FRA',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1428407709.758920,VS0,VE105',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving generator-webapp to /home/xin/.npm/registry.npmjs.org/generator-webapp/.cache.json
+25 silly addNameRange number 2 { name: 'generator-webapp', range: '*', hasData: true }
+26 silly addNameRange versions [ 'generator-webapp',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.1.3',
+26 silly addNameRange     '0.1.4',
+26 silly addNameRange     '0.1.5',
+26 silly addNameRange     '0.1.6',
+26 silly addNameRange     '0.1.7',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.2.5',
+26 silly addNameRange     '0.2.6',
+26 silly addNameRange     '0.2.7',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2',
+26 silly addNameRange     '0.4.3',
+26 silly addNameRange     '0.4.4',
+26 silly addNameRange     '0.4.5',
+26 silly addNameRange     '0.4.6',
+26 silly addNameRange     '0.4.7',
+26 silly addNameRange     '0.4.8',
+26 silly addNameRange     '0.4.9',
+26 silly addNameRange     '0.5.0-1',
+26 silly addNameRange     '0.5.0-rc.1',
+26 silly addNameRange     '0.5.0-2',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.5.1' ] ]
+27 verbose addNamed generator-webapp@0.5.1
+28 silly addNamed semver.valid 0.5.1
+29 silly addNamed semver.validRange 0.5.1
+30 silly mapToRegistry name generator-webapp
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/generator-webapp
+34 verbose addRemoteTarball https://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz',
+35 verbose addRemoteTarball   '4581cd69d5d0010be777863fb4a887b4a9ddb173' ]
+36 info retry fetch attempt 1 at 13:55:10
+37 info attempt registry request try #1 at 13:55:10
+38 http fetch GET https://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz
+39 http fetch 200 https://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz
+40 silly fetchAndShaCheck shasum 4581cd69d5d0010be777863fb4a887b4a9ddb173
+41 verbose addTmpTarball /tmp/npm-13741-cdf40886/registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for generator-webapp@0.5.1
+43 silly cache afterAdd generator-webapp@0.5.1
+44 verbose afterAdd /home/xin/.npm/generator-webapp/0.5.1/package/package.json not in flight; writing
+45 verbose afterAdd /home/xin/.npm/generator-webapp/0.5.1/package/package.json written
+46 silly install resolved [ { name: 'generator-webapp',
+46 silly install resolved     version: '0.5.1',
+46 silly install resolved     description: 'Scaffold out a front-end web app',
+46 silly install resolved     license: 'BSD',
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'https://github.com/yeoman/generator-webapp' },
+46 silly install resolved     author: { name: 'The Yeoman Team' },
+46 silly install resolved     main: 'app/index.js',
+46 silly install resolved     engines: { node: '>=0.10.0', npm: '>=1.2.10' },
+46 silly install resolved     scripts: { test: 'mocha --reporter spec' },
+46 silly install resolved     files: [ 'app' ],
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'yeoman-generator',
+46 silly install resolved        'web',
+46 silly install resolved        'app',
+46 silly install resolved        'front-end',
+46 silly install resolved        'h5bp',
+46 silly install resolved        'modernizr',
+46 silly install resolved        'jquery',
+46 silly install resolved        'grunt' ],
+46 silly install resolved     dependencies:
+46 silly install resolved      { chalk: '^0.5.1',
+46 silly install resolved        cheerio: '^0.17.0',
+46 silly install resolved        'yeoman-generator': '~0.17.3',
+46 silly install resolved        yosay: '~1.0.0' },
+46 silly install resolved     devDependencies: { mocha: '*', underscore: '^1.6.0' },
+46 silly install resolved     peerDependencies: { yo: '>=1.2.0', 'generator-mocha': '>=0.1.0' },
+46 silly install resolved     gitHead: 'ddbc163f38f6313fb368419340e3c42df7d21f06',
+46 silly install resolved     bugs: { url: 'https://github.com/yeoman/generator-webapp/issues' },
+46 silly install resolved     homepage: 'https://github.com/yeoman/generator-webapp',
+46 silly install resolved     _id: 'generator-webapp@0.5.1',
+46 silly install resolved     _shasum: '4581cd69d5d0010be777863fb4a887b4a9ddb173',
+46 silly install resolved     _from: 'generator-webapp@*',
+46 silly install resolved     _npmVersion: '2.1.2',
+46 silly install resolved     _nodeVersion: '0.10.32',
+46 silly install resolved     _npmUser: { name: 'eddiemonge', email: 'eddie+npm@eddiemonge.com' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '4581cd69d5d0010be777863fb4a887b4a9ddb173',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-webapp/-/generator-webapp-0.5.1.tgz' } ]
+47 info install generator-webapp@0.5.1 into /home/xin/github/web_training/grunt-by-yo
+48 info installOne generator-webapp@0.5.1
+49 verbose installOne of generator-webapp to /home/xin/github/web_training/grunt-by-yo not in flight; installing
+50 warn locking Error: EACCES, open '/home/xin/.npm/_locks/generator-webapp-2a3eeeb5c17cc9d4.lock'
+50 warn locking  /home/xin/.npm/_locks/generator-webapp-2a3eeeb5c17cc9d4.lock failed { [Error: EACCES, open '/home/xin/.npm/_locks/generator-webapp-2a3eeeb5c17cc9d4.lock']
+50 warn locking   errno: 3,
+50 warn locking   code: 'EACCES',
+50 warn locking   path: '/home/xin/.npm/_locks/generator-webapp-2a3eeeb5c17cc9d4.lock' }
+51 verbose stack Error: Attempt to unlock /home/xin/github/web_training/grunt-by-yo/node_modules/generator-webapp, which hasn't been locked
+51 verbose stack     at unlock (/usr/lib/node_modules/npm/lib/utils/locker.js:66:11)
+51 verbose stack     at cb (/usr/lib/node_modules/npm/lib/install.js:1004:5)
+51 verbose stack     at /usr/lib/node_modules/npm/lib/install.js:1008:20
+51 verbose stack     at /usr/lib/node_modules/npm/lib/utils/locker.js:40:9
+51 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+51 verbose stack     at /usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+51 verbose stack     at Object.oncomplete (fs.js:108:15)
+52 verbose cwd /home/xin/github/web_training/grunt-by-yo
+53 error Linux 3.13.0-48-generic
+54 error argv "node" "/usr/bin/npm" "install" "generator-webapp"
+55 error node v0.10.38
+56 error npm  v2.7.5
+57 error Attempt to unlock /home/xin/github/web_training/grunt-by-yo/node_modules/generator-webapp, which hasn't been locked
+58 error If you need help, you may report this error at:
+58 error     <https://github.com/npm/npm/issues>
+59 verbose exit [ 1, true ]
