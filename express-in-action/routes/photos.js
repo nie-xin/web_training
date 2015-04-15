@@ -10,9 +10,12 @@ photos.push({
 });
 
 exports.list = function(req, res) {
-  res.render('photos', {
-    title: 'Photos',
-    photos: photos
+  Photo.find({}, function(err, photos) {
+    if (err) return next(err);
+    res.render('photos', {
+      title: 'Photos',
+      photos: photos
+    });
   });
 };
 
@@ -43,6 +46,17 @@ exports.submit = function (dir) {
         if (err) return next(err);
         res.redirect('/');
       });
+    });
+  };
+};
+
+exports.download = function(dir) {
+  return function(req, res, next) {
+    var id = req.params.id;
+    Photo.findById(id, function(err, photo) {
+      if (err) return next(err);
+      var path = join(dir, photo.path);
+      res.sendfile(path);
     });
   };
 };
